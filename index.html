@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Youtube mobile</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/style.css"/>
+    <script src="https://kit.fontawesome.com/2d323a629b.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="logo">
+            <i class="fab fa-youtube"></i>
+            <span class="title">Youtube</span>
+        </div>
+        <div class="icons">
+            <i class="fas fa-search"></i>
+            <i class="fas fa-ellipsis-v"></i>
+        </div>        
+    </header>
+
+
+    <!-- Video Player -->
+    <section class="player">
+        <video controls src="./video/video.mp4"></video>
+    </section>
+
+    <!-- video Info-->
+    <section class="info">
+        <!-- Metadata -->
+        <div class="metadata">
+            <ul class="hashtags">
+                <li>#감성음악</li>
+                <li>#잔잔한 음악</li>
+                <li>#조용한 음악</li>
+                <li>#팝송</li>
+            </ul>
+            <div class="titleAndButton">
+                <span class="title">
+                    Lauv와 Lany의 감성 드라이브 [Playlist]
+                </span>
+                <button class="moreBtn">
+                    <i class="fas fa-caret-down"></i>
+                </button>
+            </div>
+            <div class="views">
+                <span class="views">1M 1 month ago</span>
+            </div>
+        </div>
+        <!-- Action -->
+        <div class="actions">
+            <li><button><i class="fas fa-thumbs-up"><span>1K</span></i></button></li>
+            <li><button><i class="fas fa-thumbs-down"><span>0</span></i></button></li>
+            <li><button><i class="fas fa-share"><span>Share</span></i></button></li>
+            <li><button><i class="fas fa-plus"><span>Save</span></i></button></li>
+            <li><button><i class="fab fa-font-awesome-flag"><span>Report</span></i></button></li>
+        </div>
+        <div class="channel">
+            <div class="metadata">
+                <img src="./image/music_icon.png"/>
+                <div class="info">
+                    <span class="name">By the Sing SungMin</span>
+                    <span class="subscribers">1M Subscribe</span>
+                </div>
+            </div>
+            <button class="subscribe">subscribe</button>
+        </div>
+    </section>
+    <section class="upNext">
+        <span class="title">Up next</span>
+        <ul>
+            <li class="item">
+                <img src="./image/1.png" alt="" />
+                <div class="info">
+                    <span class="title">[Playlist] 안 들으면 후회할 걸? 새벽 감성 폭발 라우브(Lauv) 노래 모음</span>
+                    <span class="name">By the Sing SungMin</span>
+                    <span class="views">60K views</span>
+                </div>
+                <button class="moreBtn"><i class="fas fa-ellipsis-v"></i></button>
+            </li>
+            <li class="item">
+                <img src="./image/2.png" alt="">
+                <span class="title">keshi / Playlist 흥이 폭발하는 노래 모음</span>
+                <span class="channel">By the Sing SungMin</span>
+                <span class="views">32K views</span>
+                <button class="moreBtn"><i class="fas fa-ellipsis-v"></i></button>
+            </li>
+            <li class="item">
+                <img src="./image/3.png" alt="">
+                <span class="title">PLAYLIST 신나는 여름 분위기에 노래</span>
+                <span class="channel">By the Sing SungMin</span>
+                <span class="views">77K views</span>
+                <button class="moreBtn"><i class="fas fa-ellipsis-v"></i></button>
+            </li>
+        </ul>
+    </section>
+</body>
+</html>
