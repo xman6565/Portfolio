@@ -28,7 +28,7 @@ body {
     font-family: 'Roboto', sans-serif;
 }
 
-ul {
+ul, li {
     list-style: none;
 }
 
@@ -61,6 +61,7 @@ header .icons .fa-search {
 }
 
 
+
 /* Video Player */
 
 .player {
@@ -69,6 +70,7 @@ header .icons .fa-search {
     text-align: center;
     background-color: var(--black-color);
 }
+
 .player video{
     width: 100%;
     height: 100%;
@@ -92,8 +94,43 @@ header .icons .fa-search {
 
 .info .metadata .titleAndButton {
     display: flex;
+
 }
 
-.info .metadata .titleAndButton .title{
+.info .metadata .titleAndButton .title { 
     font-size: var(--font-medium);
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    overflow: hidden;
+    margin-right: var(--padding);
+}
+
+.info .metadata .titleAndButton .moreBtn{
+    height: 100%;
+}
+
+.info .views {
+    font-size: var(--font-small);
+    color: var(--grey-dark-color);
+}
+
+/* Action Buttons */
+.actions {
+    display: flex;
+    justify-content: space-around;
+    margin: var(--padding) 0;
+}
+
+.actions button {
+    display : flex;
+    flex-direction: column;
+    font-size: var(--font-small);
+    color: var(--grey-dark-color);
+}
+
+.actions button i {
+    margin : 0 auto;
+    margin-bottom: calc(var(--padding) / 2);
+    font-size: 16px;
 }
