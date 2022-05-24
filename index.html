@@ -7,6 +7,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./css/style.css"/>
     <script src="https://kit.fontawesome.com/2d323a629b.js" crossorigin="anonymous"></script>
+    <script src="./javascript/main.js" defer></script>
 </head>
 <body>
     <!-- Header -->
@@ -27,7 +28,8 @@
         <video controls src="./video/video.mp4"></video>
     </section>
 
-    <!-- video Info-->
+    <div class="infoAndUpNext">
+         <!-- video Info-->
     <section class="info">
         <!-- Metadata -->
         <div class="metadata">
@@ -38,8 +40,8 @@
                 <li>#팝송</li>
             </ul>
             <div class="titleAndButton">
-                <span class="title">
-                    [Playlist] 당신의 새벽감성을 책임지러 왔습니다 / 새벽에 들으면 감성 터지는 팝송 모음
+                <span class="title clamp">
+                    [Playlist] 당신의 새벽감성을 책임지러 왔습니다 / 새벽에 들으면 감성 터지는 팝송 모음 한번더 들으러 오세요 완전 듣기 좋은 노래 많습니다. 장르 불문 새벽감성 센치한 밤에 듣기 좋은 노래 모음
                 </span>
                 <button class="moreBtn">
                     <i class="fas fa-caret-down"></i>
@@ -48,13 +50,23 @@
             <span class="views">1M 1 month ago</span>
         </div>
         <!-- Action -->
-        <div class="actions">
-            <li><button><i class="fas fa-thumbs-up"><span>1K</span></i></button></li>
-            <li><button><i class="fas fa-thumbs-down"><span>0</span></i></button></li>
-            <li><button><i class="fas fa-share"><span>Share</span></i></button></li>
-            <li><button><i class="fas fa-plus"><span>Save</span></i></button></li>
-            <li><button><i class="fab fa-font-awesome-flag"><span>Report</span></i></button></li>
-        </div>
+        <ul class="actions">
+            <li>
+                <button><i class="active fas fa-thumbs-up"><span>1K</span></i></button>
+            </li>
+            <li>
+                <button><i class="fas fa-thumbs-down"><span>0</span></i></button>
+            </li>
+            <li>
+                <button><i class="fas fa-share"><span>Share</span></i></button>
+            </li>
+            <li>
+                <button><i class="fas fa-plus"><span>Save</span></i></button>
+            </li>
+            <li>
+                <button><i class="fab fa-font-awesome-flag"><span>Report</span></i></button>
+            </li>
+        </ul>
         <div class="channel">
             <div class="metadata">
                 <img src="./image/music_icon.png"/>
@@ -66,11 +78,15 @@
             <button class="subscribe">subscribe</button>
         </div>
     </section>
+
+    <!-- up Next -->
     <section class="upNext">
         <span class="title">Up next</span>
         <ul>
             <li class="item">
-                <img src="./image/1.png" alt="" />
+                <div class="img">
+                    <img src="./image/1.png" alt="" />
+                </div>
                 <div class="info">
                     <span class="title">[Playlist] 안 들으면 후회할 걸? 새벽 감성 폭발 라우브(Lauv) 노래 모음</span>
                     <span class="name">By the Sing SungMin</span>
@@ -79,20 +95,30 @@
                 <button class="moreBtn"><i class="fas fa-ellipsis-v"></i></button>
             </li>
             <li class="item">
-                <img src="./image/2.png" alt="">
-                <span class="title">keshi / Playlist 흥이 폭발하는 노래 모음</span>
-                <span class="channel">By the Sing SungMin</span>
-                <span class="views">32K views</span>
+                <div class="img">
+                    <img src="./image/2.png" alt="">
+                </div>
+                <div class="info">
+                    <span class="title">keshi / Playlist 흥이 폭발하는 노래 모음</span>
+                    <span class="name">By the Sing SungMin</span>
+                    <span class="views">32K views</span>
+                </div>
                 <button class="moreBtn"><i class="fas fa-ellipsis-v"></i></button>
             </li>
             <li class="item">
-                <img src="./image/3.png" alt="">
-                <span class="title">PLAYLIST 신나는 여름 분위기에 노래</span>
-                <span class="channel">By the Sing SungMin</span>
-                <span class="views">77K views</span>
+                <div class="img">
+                    <img src="./image/3.png" alt="">
+                </div>
+                <div class="info">
+                    <span class="title">PLAYLIST 신나는 여름 분위기에 노래</span>
+                    <span class="name">By the Sing SungMin</span>
+                    <span class="views">77K views</span>
+                </div>
                 <button class="moreBtn"><i class="fas fa-ellipsis-v"></i></button>
             </li>
         </ul>
     </section>
+
+    </div>
 </body>
 </html>
